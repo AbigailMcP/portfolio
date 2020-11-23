@@ -1,0 +1,70 @@
+:root {
+  --dark-green: #16262e;
+  --mid-green: #2e4756;
+  --light-green: #3c7a89;
+  --grey: #9fa2b2;
+  --pink: #dbc2cf;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-green);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: var(--mid-green);
+  color: var(--pink)
+}
+
+main {
+  background-color: var(--dark-green);
+  color: var(--pink);
+}
+
+section {
+  padding: 60px 10px 80px 10px;
+  text-align: center;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+}
+
+.headerLinks li a {
+  color: var(--pink);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.mainTitle {
+  font-weight: lighter;
+  font-size: 64px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  margin-bottom: 64px;
+}
+
+.circleImage {
+  border-radius: 50%;
+  height: 200px;
+  border: solid 2px var(--light-green);
+}
