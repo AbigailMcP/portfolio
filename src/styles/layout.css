@@ -8,13 +8,14 @@
 
 html {
   font-family: 'Lato', sans-serif;
+  line-height: 1.5;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
 }
 
 body {
-  background-color: var(--dark-green);
+  background-color: var(--mid-green);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,31 +23,69 @@ body {
 
 header {
   background-color: var(--mid-green);
-  color: var(--pink)
+  color: var(--pink);
 }
 
 main {
-  background-color: var(--dark-green);
   color: var(--pink);
 }
 
 section {
-  padding: 60px 10px 80px 10px;
+  padding: 40px 10px 80px 10px;
   text-align: center;
+  border-top: solid 1px var(--light-green);
+}
+
+section.light {
+  background-color: var(--pink);
+  color: var(--dark-green);
+}
+
+section.mid {
+  background-color: var(--mid-green);
+}
+
+section.dark {
+  background-color: var(--dark-green);
+  background: linear-gradient(45deg, var(--dark-green), var(--mid-green));
+}
+
+p {
+  font-size: 18px;
+}
+
+.block {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flexBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .headerLinks {
   display: flex;
   justify-content: space-evenly;
-  margin: 0;
-  padding: 20px;
+  align-items: center;
   list-style: none;
 }
 
 .headerLinks li a {
-  color: var(--pink);
-  text-transform: uppercase;
+  color: white;
   text-decoration: none;
+  margin-left: 32px;
+}
+
+.headerContainer .home {
+  height: 32px;
 }
 
 .mainTitle {
@@ -54,6 +93,12 @@ section {
   font-size: 64px;
   letter-spacing: 15px;
   text-transform: uppercase;
+}
+
+.title {
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
 }
 
 .subtitle {
@@ -67,4 +112,15 @@ section {
   border-radius: 50%;
   height: 200px;
   border: solid 2px var(--light-green);
+}
+
+.circleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--mid-green);
+  border-radius: 50%;
+  color: white;
+  height: 300px;
+  width: 300px;
 }
