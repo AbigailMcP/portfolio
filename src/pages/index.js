@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import headshot from '../images/headshot.png'
+import headshot from '../assets/headshot.png'
 
 export default function Home() {
   return (

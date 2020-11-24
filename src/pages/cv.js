@@ -3,7 +3,7 @@ import { Document, Page } from 'react-pdf/dist/umd/entry.webpack'
 
 import Layout from '../components/layout'
 
-import cv from '../images/cv.pdf'
+import cv from '../assets/cv.pdf'
 
 export default function Cv() {
   return (

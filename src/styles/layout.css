@@ -50,8 +50,8 @@ section.dark {
   background: linear-gradient(45deg, var(--dark-green), var(--mid-green));
 }
 
-p {
-  font-size: 18px;
+.react-pdf__Document section {
+  border-top: none;
 }
 
 .block {
@@ -64,11 +64,22 @@ p {
   justify-content: space-between;
 }
 
+/* Header */
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
+}
+
+.headerContainer .headerIcon {
+  height: 32px;
+  fill: white;
+}
+
+.headerContainer .headerIcon:hover {
+  fill: var(--grey);
 }
 
 .headerLinks {
@@ -84,8 +95,37 @@ p {
   margin-left: 32px;
 }
 
-.headerContainer .home {
-  height: 32px;
+.headerLinks li a:hover {
+  color: var(--grey);
+  font-weight: normal;
+}
+
+/* The ribbon */
+
+.cornerRibbon{
+  position: fixed;
+  top: 25px;
+  right: -50px;
+  left: auto;
+  width: 200px;
+  background-color: var(--light-green);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 3px var(--dark-green);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.cornerRibbon:hover{
+  color: var(--grey);
+}
+
+/* Fonts */
+
+p {
+  font-size: 18px;
 }
 
 .mainTitle {
@@ -107,6 +147,8 @@ p {
   letter-spacing: 4px;
   margin-bottom: 64px;
 }
+
+/* Components */
 
 .circleImage {
   border-radius: 50%;
