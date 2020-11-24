@@ -23,7 +23,10 @@ export default function Home() {
           </p>
           <p>
             Loving co-creator and maintainer of the open-source React Native
-            test framework.
+            test framework, {' '}
+            <span>
+              <a href='https://cavy.app'>Cavy</a>.
+            </span>
           </p>
         </div>
       </section>

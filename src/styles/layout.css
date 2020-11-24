@@ -75,6 +75,7 @@ section.dark {
 
 .headerContainer .headerIcon {
   height: 32px;
+  margin-left: 32px;
   fill: white;
 }
 
@@ -87,17 +88,6 @@ section.dark {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-}
-
-.headerLinks li a {
-  color: white;
-  text-decoration: none;
-  margin-left: 32px;
-}
-
-.headerLinks li a:hover {
-  color: var(--grey);
-  font-weight: normal;
 }
 
 /* The ribbon */
@@ -126,6 +116,12 @@ section.dark {
 
 p {
   font-size: 18px;
+}
+
+a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 .mainTitle {
