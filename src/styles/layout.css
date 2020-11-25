@@ -41,13 +41,28 @@ section.light {
   color: var(--dark-green);
 }
 
+section.light span {
+  font-weight: bolder;
+}
+
 section.mid {
   background-color: var(--mid-green);
+}
+
+section.mid span {
+  color: white;
+  font-weight: bolder;
+}
+
+section.mid a {
+  color: white;
+  font-weight: bolder;
 }
 
 section.dark {
   background-color: var(--dark-green);
   background: linear-gradient(45deg, var(--dark-green), var(--mid-green));
+  color: var(--pink);
 }
 
 .react-pdf__Document section {
@@ -64,6 +79,14 @@ section.dark {
   justify-content: space-between;
 }
 
+.aboutBlock {
+  flex: 0 0 48%;
+}
+
+.aboutBlock p {
+  text-align: left;
+}
+
 /* Header */
 
 .headerContainer {
@@ -73,7 +96,7 @@ section.dark {
   padding: 0px;
 }
 
-.headerContainer .headerIcon {
+.headerIcon {
   height: 32px;
   margin-left: 32px;
   fill: white;
@@ -119,9 +142,8 @@ p {
 }
 
 a {
-  color: white;
+  color: var(--light-green);
   font-weight: bolder;
-  text-decoration: none;
 }
 
 .mainTitle {
@@ -131,10 +153,18 @@ a {
   text-transform: uppercase;
 }
 
+.callout {
+  font-weight: lighter;
+  font-size: 54px;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+}
+
 .title {
   font-weight: normal;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -150,15 +180,4 @@ a {
   border-radius: 50%;
   height: 200px;
   border: solid 2px var(--light-green);
-}
-
-.circleContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--mid-green);
-  border-radius: 50%;
-  color: white;
-  height: 300px;
-  width: 300px;
 }

@@ -5,6 +5,7 @@ import Home from '../assets/home.inline.svg'
 import GitHub from '../assets/github.inline.svg'
 import LinkedIn from '../assets/linkedin.inline.svg'
 import Medium from '../assets/medium.inline.svg'
+import Star from '../assets/star.inline.svg'
 
 import '../styles/layout.css'
 
@@ -13,7 +14,7 @@ export default function Layout({ children }) {
     <div>
       <header>
         <Link to='/cv'>
-          <div class='cornerRibbon'>CV / Resume</div>
+          <div className='cornerRibbon'>CV / Resume</div>
         </Link>
         <div className='headerContainer block'>
           <Link to='/'>
@@ -39,7 +40,11 @@ export default function Layout({ children }) {
         </div>
       </header>
       <main>{children}</main>
-      <footer></footer>
+      <footer>
+        <section className='dark'>
+          <Star className='headerIcon'/>
+        </section>
+      </footer>
     </div>
   )
 }
